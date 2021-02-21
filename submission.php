@@ -124,7 +124,7 @@ require_once("./include/acm_membership_config.php");
                 </li>
                 <li><a href="mailto:<?php echo $acm->SiteEmail(); ?>"><i class="fa fa-envelope-o"></i> <?php echo $acm->SiteEmail(); ?></a>
                 </li>
-                <li><a href="#"><i class="fa fa-phone"></i> <?php echo $acm->SiteContact(); ?></a>
+                <li><a href="#"><i class="fa fa-phone"></i> <?php echo +91 88057 09102 | 7030226700 ?></a>
                 </li>
               </ul>
               <!-- End Contact Info -->

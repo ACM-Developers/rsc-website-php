@@ -142,7 +142,7 @@ $userid = $acm->User_Id();
                 </li>
                 <li><a href="mailto:<?php echo $acm->SiteEmail(); ?>"><i class="fa fa-envelope-o"></i> <?php echo $acm->SiteEmail(); ?></a>
                 </li>
-                <li><a href="#"><i class="fa fa-phone"></i> <?php echo $acm->SiteContact(); ?></a>
+                <li><a href="#"><i class="fa fa-phone"></i> <?php echo +91 88057 09102 | 7030226700 ?></a>
                 </li>
               </ul>
               <!-- End Contact Info -->
@@ -544,7 +544,7 @@ $userid = $acm->User_Id();
               <h4><img src="images/footer-acm.png" class="img-responsive" alt="WCE Research Symposium on Computing" /></h4>
               <p>WCE Research Symposium on Computing 2016 is the 1st National Level event organized by Department of Computer Science &amp; Engineering, Walchand College of Engineering, Sangli.</p>
               <ul>
-                <li><span>Phone Number:</span> <?php echo $acm->SiteContact(); ?></li>
+                <li><span>Phone Number:</span> <?php echo +91 88057 09102 | 7030226700 ?></li>
                 <li><span>Email:</span> <?php echo $acm->SiteEmail(); ?></li>
                 <li><span>Website:</span> http://rs.walchandsangli.ac.in</li>
               </ul>
