@@ -23,7 +23,7 @@ if($status <2)
 $userid = $acm->User_Id();
 
 
-?>
+ 
 
 <!doctype html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -33,7 +33,7 @@ $userid = $acm->User_Id();
 <head>
 
   <!-- Basic -->
-  <title>WCE Research Symposium on Computing | <?php echo $acm->UserFullName();?></title>
+  <title>WCE Research Symposium on Computing |   $acm->UserFullName(); </title>
 
   <!-- Define Charset -->
   <meta charset="utf-8">
@@ -146,9 +146,9 @@ $userid = $acm->User_Id();
               <ul class="contact-details">
                 <li><a href="#"><i class="fa fa-map-marker"></i> Walchand College of Engineering, Sangli, MH-IN</a>
                 </li>
-                <li><a href="mailto:<?php echo $acm->SiteEmail(); ?>"><i class="fa fa-envelope-o"></i> <?php echo $acm->SiteEmail(); ?></a>
+                <li><a href="mailto:  rsc2021@walchandsangli.ac.in  "><i class="fa fa-envelope-o"></i>   rsc2021@walchandsangli.ac.in  </a>
                 </li>
-                <li><a href="#"><i class="fa fa-phone"></i> <?php echo +91 88057 09102 | 7030226700 ?></a>
+                <li><a href="#"><i class="fa fa-phone"></i>   +91 88057 09102 | 7030226700  </a>
                 </li>
               </ul>
               <!-- End Contact Info -->
@@ -158,16 +158,16 @@ $userid = $acm->User_Id();
               <!-- Start Social Links -->
               <ul class="social-list">
                 <li>
-                  <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="<?php echo $acm->SiteFB(); ?>"><i class="fa fa-facebook"></i></a>
+                  <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="  $acm->SiteFB();  "><i class="fa fa-facebook"></i></a>
                 </li>
                 <li>
-                  <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="<?php echo $acm->SiteTwitter(); ?>"><i class="fa fa-twitter"></i></a>
+                  <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="  $acm->SiteTwitter();  "><i class="fa fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="<?php echo $acm->SiteLinkedIn(); ?>"><i class="fa fa-google-plus"></i></a>
+                  <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="  $acm->SiteLinkedIn();  "><i class="fa fa-google-plus"></i></a>
                 </li>
                 <li>
-                  <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="<?php echo $acm->SiteGplus(); ?>"><i class="fa fa-linkedin"></i></a>
+                  <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="  $acm->SiteGplus();  "><i class="fa fa-linkedin"></i></a>
                 </li>
               </ul>
               <!-- End Social Links -->
@@ -192,8 +192,8 @@ $userid = $acm->User_Id();
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
             <a class="navbar-brand" href="index.php">
-              <h1><?php echo <img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021 ?></h1>
-              <small><?php echo rsc2021@walchandsangli.ac.in ?></small>
+              <h1>  <img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021  </h1>
+              <small>  rsc2021@walchandsangli.ac.in  </small>
             </a>
           </div>
           <div class="navbar-collapse collapse">
@@ -271,21 +271,21 @@ $userid = $acm->User_Id();
               </li>
                                    <?php if($acm->CheckLogin()){ 
               
-                ?>
-              <li><a href="#" class="active"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
+                 
+              <li><a href="#" class="active"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;  $acm->UserFullName();  </a>
                 <ul class="dropdown">
-                  <li><a href="../<?php echo $acm->UserRole();?>/index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                  <li><a href="../  $acm->UserRole(); /index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                   </li>
-                  <li><a href="../<?php echo $acm->UserRole();?>/settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                  <li><a href="../  $acm->UserRole(); /settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                   </li>
                   <li><a href="../login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                   </li>
                   </ul>
               </li>
-              <?php } else{ ?>
+              <?php } else{  
               <li><a href="../login.php" class="active"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Login</a>
               </li>
-              <?php } ?>
+              <?php }  
 
             </ul>
             </div>
@@ -355,21 +355,21 @@ $userid = $acm->User_Id();
               </li>
                                    <?php if($acm->CheckLogin()){ 
               
-                ?>
-              <li><a href="#" class="active"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
+                 
+              <li><a href="#" class="active"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;  $acm->UserFullName();  </a>
                 <ul class="dropdown">
-                  <li><a href="../<?php echo $acm->UserRole();?>/index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                  <li><a href="../  $acm->UserRole(); /index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                   </li>
-                  <li><a href="../<?php echo $acm->UserRole();?>/settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                  <li><a href="../  $acm->UserRole(); /settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                   </li>
                   <li><a href="../login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                   </li>
                   </ul>
               </li>
-              <?php } else{ ?>
+              <?php } else{  
               <li><a href="../login.php" class="active"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Login</a>
               </li>
-              <?php } ?>
+              <?php }  
 
             
         </ul>
@@ -452,7 +452,7 @@ $userid = $acm->User_Id();
             <div class="col-sm-12">
               <div class="alert alert-success alert-dismissible">
                 
-                <strong><h5 style="color:white";?><i class="fa fa-info-circle"></i> Authors are requested to go to our  <a href="https://easychair.org/conferences/?conf=rsc2016">easychair portal</a> and upload their camera ready paper before 13/12/2016 06:00 PM</h5></strong>
+                <strong><h5 style="color:white"; <i class="fa fa-info-circle"></i> Authors are requested to go to our  <a href="https://easychair.org/conferences/?conf=rsc2016">easychair portal</a> and upload their camera ready paper before 13/12/2016 06:00 PM</h5></strong>
               </div>
                 </div>
             </div>
@@ -538,13 +538,13 @@ $userid = $acm->User_Id();
         $result = mysqli_query($conn, $sql);
         if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_assoc($result))
-        { ?>
+        {  
                 <li>
-                  <a href="<?php echo $row['ext_link'];?>" class="lightbox">
-                    <img alt="<?php echo $row['link_name'];?>" src="../<?php echo $row['image_link'];?>">
+                  <a href="  $row['ext_link']; " class="lightbox">
+                    <img alt="  $row['link_name']; " src="../  $row['image_link']; ">
                   </a>
                 </li>
-                <?php } } ?>
+                <?php } }  
               </ul>
             </div>
           </div>
@@ -558,8 +558,8 @@ $userid = $acm->User_Id();
               <h4><img src="images/footer-acm.png" class="img-responsive" alt="WCE Research Symposium on Computing" /></h4>
               <p>WCE Research Symposium on Computing 2016 is the 1st National Level event organized by Department of Computer Science &amp; Engineering, Walchand College of Engineering, Sangli.</p>
               <ul>
-                <li><span>Phone Number:</span> <?php echo +91 88057 09102 | 7030226700 ?></li>
-                <li><span>Email:</span> <?php echo $acm->SiteEmail(); ?></li>
+                <li><span>Phone Number:</span>   +91 88057 09102 | 7030226700  </li>
+                <li><span>Email:</span>   rsc2021@walchandsangli.ac.in  </li>
                 <li><span>Website:</span> http://rs.walchandsangli.ac.in</li>
               </ul>
             </div>

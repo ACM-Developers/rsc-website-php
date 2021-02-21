@@ -29,4 +29,4 @@ $acm->InitDB(/*hostname*/'localhost',
 // and put it here
 $acm->SetRandomKey('fdsjhAK23dIqpkU');
 
-?>
+ 

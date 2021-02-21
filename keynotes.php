@@ -6,7 +6,7 @@ require_once("./include/acm_membership_config.php");
 
 
 
-?>
+ 
 
 
 
@@ -234,11 +234,11 @@ require_once("./include/acm_membership_config.php");
 
                 </li>
 
-                <li><a href="mailto:<?php echo $acm->SiteEmail(); ?>"><i class="fa fa-envelope-o"></i> <?php echo $acm->SiteEmail(); ?></a>
+                <li><a href="mailto:  rsc2021@walchandsangli.ac.in  "><i class="fa fa-envelope-o"></i>   rsc2021@walchandsangli.ac.in  </a>
 
                 </li>
 
-                <li><a href="#"><i class="fa fa-phone"></i> <?php echo +91 88057 09102 | 7030226700 ?></a>
+                <li><a href="#"><i class="fa fa-phone"></i>   +91 88057 09102 | 7030226700  </a>
 
                 </li>
 
@@ -258,25 +258,25 @@ require_once("./include/acm_membership_config.php");
 
                 <li>
 
-                  <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="<?php echo $acm->SiteFB(); ?>"><i class="fa fa-facebook"></i></a>
+                  <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="  $acm->SiteFB();  "><i class="fa fa-facebook"></i></a>
 
                 </li>
 
                 <li>
 
-                  <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="<?php echo $acm->SiteTwitter(); ?>"><i class="fa fa-twitter"></i></a>
+                  <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="  $acm->SiteTwitter();  "><i class="fa fa-twitter"></i></a>
 
                 </li>
 
                 <li>
 
-                  <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="<?php echo $acm->SiteLinkedIn(); ?>"><i class="fa fa-google-plus"></i></a>
+                  <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="  $acm->SiteLinkedIn();  "><i class="fa fa-google-plus"></i></a>
 
                 </li>
 
                 <li>
 
-                  <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="<?php echo $acm->SiteGplus(); ?>"><i class="fa fa-linkedin"></i></a>
+                  <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="  $acm->SiteGplus();  "><i class="fa fa-linkedin"></i></a>
 
                 </li>
 
@@ -326,9 +326,9 @@ require_once("./include/acm_membership_config.php");
 
             <a class="navbar-brand" href="index.php">
 
-              <h1><?php echo <img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021 ?></h1>
+              <h1>  <img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021  </h1>
 
-              <small><?php echo rsc2021@walchandsangli.ac.in ?></small>
+              <small>  rsc2021@walchandsangli.ac.in  </small>
 
             </a>
 
@@ -494,17 +494,17 @@ require_once("./include/acm_membership_config.php");
 
               
 
-                ?>
+                 
 
-              <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
+              <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;  $acm->UserFullName();  </a>
 
                 <ul class="dropdown">
 
-                  <li><a href="<?php echo $acm->UserRole();?>/index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                  <li><a href="  $acm->UserRole(); /index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
 
                   </li>
 
-                  <li><a href="<?php echo $acm->UserRole();?>/settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                  <li><a href="  $acm->UserRole(); /settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
 
                   </li>
 
@@ -516,13 +516,13 @@ require_once("./include/acm_membership_config.php");
 
               </li>
 
-              <?php } else{ ?>
+              <?php } else{  
 
             <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
 
             </li>
 
-              <?php } ?>
+              <?php }  
 
             </ul>
 
@@ -903,7 +903,7 @@ require_once("./include/acm_membership_config.php");
 
 require_once("footer.php");
 
-?>
+ 
 
 
 
