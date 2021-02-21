@@ -1,17 +1,4 @@
-<?php
-require_once("./include/db_config.html");
-require_once("./include/acm_membership_config.html");
-
-if(isset($_GET['ref_id']))
-{ 
-	$ref_id = $_GET['ref_id'];
-	if($ref_id>2)
-	{
-		header("Location: error.html");
-	}
-
-}
-
+<!-- 
 if($ref_id==1)
 {
 	$ref_name = "Organising Committee";
@@ -19,10 +6,7 @@ if($ref_id==1)
 if($ref_id==2)
 {
 	$ref_name = "Advisory Committee";
-}
-
-?>
-
+} -->
 
 <!doctype html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -32,7 +16,7 @@ if($ref_id==2)
 <head>
 
 	<!-- Basic -->
-	<title>WCE Research Symposium on Computing | <?php echo $ref_name ?> </title>
+	<title>WCE Research Symposium on Computing | Organising Committee> </title>
 
 	<!-- Define Charset -->
 	<meta charset="utf-8">
@@ -148,16 +132,16 @@ if($ref_id==2)
 							<!-- Start Social Links -->
 							<ul class="social-list">
 								<li>
-									<a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="<?php echo $acm->SiteFB(); ?>"><i class="fa fa-facebook"></i></a>
+									<a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
 								</li>
 								<li>
-									<a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="<?php echo $acm->SiteTwitter(); ?>"><i class="fa fa-twitter"></i></a>
+									<a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
 								</li>
 								<li>
-									<a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="<?php echo $acm->SiteLinkedIn(); ?>"><i class="fa fa-google-plus"></i></a>
+									<a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
 								</li>
 								<li>
-									<a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="<?php echo $acm->SiteGplus(); ?>"><i class="fa fa-linkedin"></i></a>
+									<a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 								</li>
 							</ul>
 							<!-- End Social Links -->
@@ -234,12 +218,8 @@ if($ref_id==2)
 								</li>
 								<li><a href="#" class="active"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
 									<ul class="dropdown">
-										<li><a href="committee.html?ref_id=1" <?php if($ref_id == 1) { ?> class="active" <?php } ?>>Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+										<li><a href="org_committee.html">Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
 										</li>
-
-										<li><a href="committee.html?ref_id=2" <?php if($ref_id == 2) { ?> class="active" <?php } ?>>Advisory Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
-										</li>
-
 									</ul>
 								</li>
 								<li><a href="#"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;Local Information</a>
@@ -262,7 +242,7 @@ if($ref_id==2)
 								</li>
 								<li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
 								</li>
-								<?php if($acm->CheckLogin()){ 
+								<!-- <?php if($acm->CheckLogin()){ 
 
 									?>
 									<li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
@@ -278,7 +258,7 @@ if($ref_id==2)
 								<?php } else{ ?>
 									<li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
 									</li>
-								<?php } ?>
+								<?php } ?> -->
 							</ul>
 						</div>
 						<!-- End Navigation List -->
@@ -319,12 +299,8 @@ if($ref_id==2)
 					</li>
 					<li><a href="#" class="active"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
 						<ul class="dropdown">
-							<li><a href="committee.html?ref_id=1" <?php if($ref_id == 1) { ?> class="active" <?php } ?>>Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+							<li><a href="org_committee.html">Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
 							</li>
-
-							<li><a href="committee.html?ref_id=2" <?php if($ref_id == 2) { ?> class="active" <?php } ?>>Advisory Committee Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
-							</li>
-
 						</ul>
 					</li>
 					<li><a href="#"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;Local Information</a>
@@ -347,7 +323,7 @@ if($ref_id==2)
 					</li>
 					<li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
 					</li>
-					<?php if($acm->CheckLogin()){ 
+					<!-- <?php if($acm->CheckLogin()){ 
 
 						?>
 						<li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
@@ -363,7 +339,7 @@ if($ref_id==2)
 					<?php } else{ ?>
 						<li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
 						</li>
-					<?php } ?>
+					<?php } ?> -->
 
 				</ul>
 				<!-- Mobile Menu End -->
@@ -380,13 +356,13 @@ if($ref_id==2)
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<h2><?php echo $ref_name; ?></h2>
+						<h2>Organising Committee</h2>
 					</div>
 					<div class="col-md-6">
 						<ul class="breadcrumbs">
 							<li><a href="index.html">Home</a></li>
 							<li><b>Organisation</b></li> 
-							<li><?php echo $ref_name; ?></li>          
+							<li>Organising Committee</li>          
 						</ul>
 					</div>
 				</div>
@@ -396,10 +372,6 @@ if($ref_id==2)
 		<!-- Start Content -->
 		<div id="content">
 			<div class="container">
-				<?php if($ref_id ==1)
-				{ 
-
-					?>
 					<table class="table table-responsive table-condensed table-bordered">
 						<thead>
 							<th>Role</th>
@@ -485,94 +457,9 @@ if($ref_id==2)
 						</tr>
 
 					</table>
-				<?php  } ?>
-				<?php if($ref_id == 2)
-				{
-					?>
-					<div class="row">
-						<div class="col-sm-12">
-							<table class="table table-responsive table-condensed table-bordered">
-
-								<th>Name</th>
-								<tr>
-									<td>
-										Dr. Brijesh Iyer (BATU), Lonere
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Mrs. M. A. Joshi (IET), Pune
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Meghshyam Prasad (Videoken), Banglore
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Rajesh Ingle (PICT), Pune
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. R Venkateswaran (Persistent), Pune
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Shailja Shukla (JEC), Jabalpur
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Shashidhar Koolagudi (NIT), Surathkal
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Umakant Kulkarni (SDM), Dharwad
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Vidyadhar Dharmadhikari (WCE), Sangli
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Yashwant Joshi (SGGS), Nanded
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Dr. Prakash J. Kulkarni
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										Dr. Govardhan, JNTUH
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Prof. Harsh Verma, NITJ
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-
-					<?php 
-				} ?>
 			</div>
 		</div>
 		<!-- End content -->
-
-		<?php
-		require_once("footer.html");
-		?>
 
 	</div>
 	<!-- End Container -->
@@ -581,6 +468,7 @@ if($ref_id==2)
 	<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
 	<script type="text/javascript" src="js/script.js"></script>
+
 	<script>
 		function showResult(str) {
 			if (str.length==0) {
@@ -590,53 +478,53 @@ if($ref_id==2)
 				return;
 			}
 			if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp=new XMLHttpRequest();
-  } else {  // code for IE6, IE5
-  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange=function() {
-  	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-  		document.getElementById("livesearch").innerHTML= "<ul class='dropdown'>"+xmlhttp.responseText+"</ul>";
-  		document.getElementById("livesearch").style.background="#fff";
-  		document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-  		document.getElementById("livesearch").style.padding="3%";
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+			} else {  // code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+					document.getElementById("livesearch").innerHTML= "<ul class='dropdown'>"+xmlhttp.responseText+"</ul>";
+					document.getElementById("livesearch").style.background="#fff";
+					document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+					document.getElementById("livesearch").style.padding="3%";
 
-  	}
-  }
-  xmlhttp.open("GET","livesearch.html?q="+str,true);
-  xmlhttp.send();
-}
+				}
+			}
+			xmlhttp.open("GET","livesearch.html?q="+str,true);
+			xmlhttp.send();
+			}
 
 
-function subscribe()
-{
-	if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp=new XMLHttpRequest();
-} 
-else 
-  {  // code for IE6, IE5
-  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange=function() {
-  	if (xmlhttp.readyState==4 && xmlhttp.status==200) {  
+			function subscribe()
+			{
+				if (window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xmlhttp=new XMLHttpRequest();
+			} 
+			else 
+			{  // code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {  
 
-  		document.getElementById("subscribeResponse").innerHTML = xmlhttp.responseText;
-  	}
-  }
-  var email = document.getElementById("txtEmail").value;
-  if(email =="")
-  {
-  	document.getElementById("subscribeResponse").innerHTML = "Email Cannot Be Empty!"; 
-  }
-  else
-  {
-  	xmlhttp.open("GET","subscribe.html?email="+email,true);
-  	xmlhttp.send();
-  }
-}
-</script>
+					document.getElementById("subscribeResponse").innerHTML = xmlhttp.responseText;
+				}
+			}
+			var email = document.getElementById("txtEmail").value;
+			if(email =="")
+			{
+				document.getElementById("subscribeResponse").innerHTML = "Email Cannot Be Empty!"; 
+			}
+			else
+			{
+				xmlhttp.open("GET","subscribe.html?email="+email,true);
+				xmlhttp.send();
+			}
+			}
+	</script>
 </body>
 
 </html>
