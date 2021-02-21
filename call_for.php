@@ -1,15 +1,3 @@
-<?php
-
-require_once("./include/db_config.php");
-
-require_once("./include/acm_membership_config.php");
-
-
-
-?>
-
-
-
 <!doctype html>
 
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -234,11 +222,11 @@ require_once("./include/acm_membership_config.php");
 
                 </li>
 
-                <li><a href="mailto:<?php echo $acm->SiteEmail(); ?>"><i class="fa fa-envelope-o"></i> <?php echo $acm->SiteEmail(); ?></a>
+                <li><a href="mailto:rsc2021@walchandsangli.ac.in"><i class="fa fa-envelope-o"></i> rsc2021@walchandsangli.ac.in</a>
 
                 </li>
 
-                <li><a href="#"><i class="fa fa-phone"></i> <?php echo $acm->SiteContact(); ?></a>
+                <li><a href="#"><i class="fa fa-phone"></i> +91 88057 09102 | 7030226700</a>
 
                 </li>
 
@@ -258,25 +246,25 @@ require_once("./include/acm_membership_config.php");
 
                 <li>
 
-                  <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="<?php echo $acm->SiteFB(); ?>"><i class="fa fa-facebook"></i></a>
+                  <a class="facebook itl-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
 
                 </li>
 
                 <li>
 
-                  <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="<?php echo $acm->SiteTwitter(); ?>"><i class="fa fa-twitter"></i></a>
+                  <a class="twitter itl-tooltip" data-placement="bottom" title="Twitter" href="#"><i class="fa fa-twitter"></i></a>
 
                 </li>
 
                 <li>
 
-                  <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="<?php echo $acm->SiteLinkedIn(); ?>"><i class="fa fa-google-plus"></i></a>
+                  <a class="google itl-tooltip" data-placement="bottom" title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a>
 
                 </li>
 
                 <li>
 
-                  <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="<?php echo $acm->SiteGplus(); ?>"><i class="fa fa-linkedin"></i></a>
+                  <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
 
                 </li>
 
@@ -326,9 +314,9 @@ require_once("./include/acm_membership_config.php");
 
             <a class="navbar-brand" href="index.php">
 
-              <h1><?php echo $acm->SiteName(); ?></h1>
+              <h1><img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021</h1>
 
-              <small><?php echo $acm->AdminEmail(); ?></small>
+              <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFIFTH NATIONAL RESEARCH SYMPOSIUM ON COMPUTING</small>
 
             </a>
 
@@ -486,7 +474,7 @@ require_once("./include/acm_membership_config.php");
                 <li><a href="contact.php"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
 
                 </li>
-                <?php if($acm->CheckLogin()){ 
+                <!-- <?php if($acm->CheckLogin()){ 
                   
                   ?>
                   <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
@@ -502,7 +490,7 @@ require_once("./include/acm_membership_config.php");
                 <?php } else{ ?>
                   <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
                     </li>              <?php } ?>
-                    
+                     -->
 
                   </ul>
 
@@ -641,7 +629,7 @@ require_once("./include/acm_membership_config.php");
               <li><a href="contact.php"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
 
               </li>
-              <?php if($acm->CheckLogin()){ 
+              <!-- <?php if($acm->CheckLogin()){ 
                 
                 ?>
                 <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
@@ -657,7 +645,7 @@ require_once("./include/acm_membership_config.php");
               <?php } else{ ?>
                 <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
                 </li>
-              <?php } ?>
+              <?php } ?> -->
               
 
               
@@ -830,42 +818,42 @@ require_once("./include/acm_membership_config.php");
 
 
 
-<?php
+<!-- <?php
 require_once("footer.php");
-?>
+?> -->
 
 
-            </div>
+</div>
 
-            <!-- End Container -->
-
-
-
-            <!-- Go To Top Link -->
-
-            <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+<!-- End Container -->
 
 
 
-            <script type="text/javascript" src="js/script.js"></script>
+<!-- Go To Top Link -->
 
-            <script>
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
-              function showResult(str) {
 
-                if (str.length==0) {
 
-                  document.getElementById("livesearch").innerHTML="";
+<script type="text/javascript" src="js/script.js"></script>
 
-                  document.getElementById("livesearch").style.border="0px";
+<script>
 
-                  
+  function showResult(str) {
 
-                  return;
+    if (str.length==0) {
 
-                }
+      document.getElementById("livesearch").innerHTML="";
 
-                if (window.XMLHttpRequest) {
+      document.getElementById("livesearch").style.border="0px";
+
+      
+
+      return;
+
+    }
+
+    if (window.XMLHttpRequest) {
 
     // code for IE7+, Firefox, Chrome, Opera, Safari
 
