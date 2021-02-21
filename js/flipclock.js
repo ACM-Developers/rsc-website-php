@@ -1,7 +1,7 @@
 /*
 	Base.js, version 1.1a
 	Copyright 2006-2010, Dean Edwards
-	License: http://www.opensource.org/licenses/mit-license.php
+	License: http://www.opensource.org/licenses/mit-license.html
 */
 
 var Base = function() {
@@ -153,7 +153,7 @@ var FlipClock;
  *
  * @author     Justin Kimbrell
  * @copyright  2013 - Objective HTML, LLC
- * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ * @licesnse   http://www.opensource.org/licenses/mit-license.html
  */
 	
 (function($) {
@@ -317,7 +317,7 @@ var FlipClock;
  *
  * @author     Justin Kimbrell
  * @copyright  2013 - Objective HTML, LLC
- * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ * @licesnse   http://www.opensource.org/licenses/mit-license.html
  */
 	
 (function($) {
@@ -561,7 +561,7 @@ var FlipClock;
  *
  * @author     Justin Kimbrell
  * @copyright  2013 - Objective HTML, LLC
- * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ * @licesnse   http://www.opensource.org/licenses/mit-license.html
  */
 	
 (function($) {
@@ -942,7 +942,7 @@ var FlipClock;
  *
  * @author     Justin Kimbrell
  * @copyright  2013 - Objective HTML, LLC
- * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ * @licesnse   http://www.opensource.org/licenses/mit-license.html
  */
 	
 (function($) {
@@ -1149,7 +1149,7 @@ var FlipClock;
  *
  * @author     Justin Kimbrell
  * @copyright  2013 - Objective HTML, LLC
- * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ * @licesnse   http://www.opensource.org/licenses/mit-license.html
  */
 	
 (function($) {
@@ -1197,7 +1197,7 @@ var FlipClock;
  *
  * @author     Justin Kimbrell
  * @copyright  2013 - Objective HTML, LLC
- * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ * @licesnse   http://www.opensource.org/licenses/mit-license.html
  */
 	
 (function($) {
@@ -1676,7 +1676,7 @@ var FlipClock;
  *
  * @author     Justin Kimbrell
  * @copyright  2013 - Objective HTML, LLC
- * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ * @licesnse   http://www.opensource.org/licenses/mit-license.html
  */
 	
 (function($) {

@@ -1,7 +1,7 @@
 <?php 
 
-require_once("./include/db_config.php");
-require_once("./include/acm_membership_config.php");
+require_once("./include/db_config.html");
+require_once("./include/acm_membership_config.html");
 
 
 if(isset($_POST['submit'])){
@@ -20,18 +20,18 @@ $profile_pic = mysqli_real_escape_string($conn, $_POST['profile_pic']);
 $sql = "INSERT INTO comment (comment_text,author_id,name,email,contact,post_id,profile_pic) VALUES ('$comment','$author','$name','$email','$contact','$postid','$profile_pic')";
 if(mysqli_query($conn, $sql)){
   
-   header("Location : post.php?ref_id=$postid");
+   header("Location : post.html?ref_id=$postid");
 } 
 else
 {
-	header("Location: error.php");
+	header("Location: error.html");
 }*/
 
 print_r($_POST);
 }
 else
 {
-	header("Location: error.php");
+	header("Location: error.html");
 
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-/*~ class.phpmailer.php
+/*~ class.htmlmailer.html
 .---------------------------------------------------------------------------.
 |  Software: PHPMailer - PHP email class                                    |
 |   Version: 2.0.4                                                          |
@@ -510,7 +510,7 @@ class PHPMailer {
    * @return bool
    */
   function SmtpSend($header, $body) {
-    include_once($this->PluginDir . 'class.smtp.php');
+    include_once($this->PluginDir . 'class.smtp.html');
     $error = '';
     $bad_rcpt = array();
 
@@ -645,10 +645,10 @@ class PHPMailer {
    * @return bool
    */
   function SetLanguage($lang_type, $lang_path = 'language/') {
-    if(file_exists($lang_path.'phpmailer.lang-'.$lang_type.'.php')) {
-      include($lang_path.'phpmailer.lang-'.$lang_type.'.php');
-    } elseif (file_exists($lang_path.'phpmailer.lang-en.php')) {
-      include($lang_path.'phpmailer.lang-en.php');
+    if(file_exists($lang_path.'phpmailer.lang-'.$lang_type.'.html')) {
+      include($lang_path.'phpmailer.lang-'.$lang_type.'.html');
+    } elseif (file_exists($lang_path.'phpmailer.lang-en.html')) {
+      include($lang_path.'phpmailer.lang-en.html');
     } else {
       $PHPMAILER_LANG = array();
       $PHPMAILER_LANG["provide_address"]      = 'You must provide at least one ' .
@@ -1333,7 +1333,7 @@ class PHPMailer {
   /**
    * Correctly encodes and wraps long multibyte strings for mail headers
    * without breaking lines within a character.
-   * Adapted from a function by paravoid at http://uk.php.net/manual/en/function.mb-encode-mimeheader.php
+   * Adapted from a function by paravoid at http://uk.html.net/manual/en/function.mb-encode-mimeheader.html
    * @access private
    * @param string $str multi-byte text to wrap encode
    * @return string

@@ -1,5 +1,5 @@
 <?PHP
-require_once("./include/acm_membership.php");
+require_once("./include/acm_membership.html");
 
 $acm = new ACMMembership();
 
@@ -18,7 +18,7 @@ $acm->SetSiteGplus('#');
 //Provide your database login details here:
 //hostname, user name, password, database name and table name
 //note that the script will create the table (for example, fgusers in this case)
-//by itself on submitting register.php for the first time
+//by itself on submitting register.html for the first time
 $acm->InitDB(/*hostname*/'182.50.133.84',
                       /*username*/'rs',
                       /*password*/'CBAadmin@123',

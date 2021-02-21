@@ -1,6 +1,6 @@
 <?php
-require_once("./include/db_config.php");
-require_once("./include/acm_membership_config.php");
+require_once("./include/db_config.html");
+require_once("./include/acm_membership_config.html");
 
  
 
@@ -167,7 +167,7 @@ require_once("./include/acm_membership_config.php");
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="index.html">
               <h1>  <img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021  </h1>
               <small>  rsc2021@walchandsangli.ac.in  </small>
             </a>
@@ -189,82 +189,82 @@ require_once("./include/acm_membership_config.php");
              
               <ul class="nav navbar-nav" >
                 <li>
-                  <a href="index.php"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
+                  <a href="index.html"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
                 </li>
                 <li>
                   <a href="#" class="active"><span class="pull-left"><i class="fa fa-group"></i></span>&nbsp;&nbsp;Authors</a>
                   <ul class="dropdown">
-                    <li><a href="call_for.php" >Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
+                    <li><a href="call_for.html" >Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
                     </li>
-                    <li><a href="instructions.php">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
+                    <li><a href="instructions.html">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
                     </li>
-                    <li><a href="submission.php" class="active">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
+                    <li><a href="submission.html" class="active">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
                     </li>
                     
-                    <li><a href="dates.php">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+                    <li><a href="dates.html">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
                     </li>
                   </ul>
                 </li>
                 <li><a href="#"><span class="pull-left"><i class="fa fa-calendar-check-o"></i></span>&nbsp;&nbsp;Programs</a>
                   <ul class="dropdown">
-                    <li><a href="keynotes.php">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
+                    <li><a href="keynotes.html">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
                     </li>
-                    <li><a href="paper_presentation.php">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
+                    <li><a href="paper_presentation.html">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
                     </li> 
-                    <li><a href="poster_presentation.php">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
+                    <li><a href="poster_presentation.html">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
                     </li>
-                    <li><a href="schedule.php">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+                    <li><a href="schedule.html">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
                     </li>
                     
-                    <li><a href="register.php">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
+                    <li><a href="register.html">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
                     </li>
                   </ul>
                 </li>
                 <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
                   <ul class="dropdown">
-                    <li><a href="committee.php?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                    <li><a href="committee.html?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                     </li>
                     
-                    <li><a href="committee.php?ref_id=2"> Advisory Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                    <li><a href="committee.html?ref_id=2"> Advisory Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                     </li>
                     
                   </ul>
                 </li>
                 <li><a href="#"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;Local Information</a>
                   <ul class="dropdown">
-                    <li><a href="venue.php">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
+                    <li><a href="venue.html">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
                     </li>
                     
-                    <li><a href="location.php">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
+                    <li><a href="location.html">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
                     </li>
                     
 
-                    <li><a href="accessing.php">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
+                    <li><a href="accessing.html">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
                     </li>
                   </ul>
                 </li>
 
-                <li><a href="gallery.php"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
+                <li><a href="gallery.html"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
                 </li>
-                <li><a href="about.php"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
+                <li><a href="about.html"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
                 </li>
-                <li><a href="contact.php"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
+                <li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
                 </li>
                 <?php if($acm->CheckLogin()){ 
                   
                    
                   <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;  $acm->UserFullName();  </a>
                     <ul class="dropdown">
-                      <li><a href="  $acm->UserRole(); /index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                      <li><a href="  $acm->UserRole(); /index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                       </li>
-                      <li><a href="  $acm->UserRole(); /settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                      <li><a href="  $acm->UserRole(); /settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                       </li>
-                      <li><a href="login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
+                      <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                       </li>
                     </ul>
                   </li>
                 <?php } else{  
-                  <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
+                  <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
                   </li>
                 <?php }  
               </ul>
@@ -276,82 +276,82 @@ require_once("./include/acm_membership_config.php");
         <!-- Mobile Menu Start -->
         <ul class="wpb-mobile-menu">
           <li>
-            <a href="index.php"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
+            <a href="index.html"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
           </li>
           <li>
             <a href="#" class="active"><span class="pull-left"><i class="fa fa-group"></i></span>&nbsp;&nbsp;Authors</a>
             <ul class="dropdown">
-              <li><a href="call_for.php">Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
+              <li><a href="call_for.html">Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
               </li>
-              <li><a href="instructions.php">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
+              <li><a href="instructions.html">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
               </li>
-              <li><a href="submission.php"  class="active">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
+              <li><a href="submission.html"  class="active">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
               </li>
               
-              <li><a href="dates.php">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+              <li><a href="dates.html">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
               </li>
             </ul>
           </li>
           <li><a href="#"><span class="pull-left"><i class="fa fa-calendar-check-o"></i></span>&nbsp;&nbsp;Programs</a>
             <ul class="dropdown">
-              <li><a href="keynotes.php">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
+              <li><a href="keynotes.html">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
               </li>
-              <li><a href="paper_presentation.php">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
+              <li><a href="paper_presentation.html">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
               </li> 
-              <li><a href="poster_presentation.php">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
+              <li><a href="poster_presentation.html">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
               </li>
-              <li><a href="schedule.php">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+              <li><a href="schedule.html">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
               </li>
 
-              <li><a href="register.php">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
+              <li><a href="register.html">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
               </li>
             </ul>
           </li>
           <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
             <ul class="dropdown">
-              <li><a href="committee.php?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+              <li><a href="committee.html?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
               </li>
               
-              <li><a href="committee.php?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+              <li><a href="committee.html?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
               </li>
               
             </ul>
           </li>
           <li><a href="#"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;Local Information</a>
             <ul class="dropdown">
-              <li><a href="venue.php">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
+              <li><a href="venue.html">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
               </li>
               
-              <li><a href="location.php">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
+              <li><a href="location.html">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
               </li>
               
 
-              <li><a href="accessing.php">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
+              <li><a href="accessing.html">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
               </li>
             </ul>
           </li>
 
-          <li><a href="gallery.php"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
+          <li><a href="gallery.html"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
           </li>
-          <li><a href="about.php"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
+          <li><a href="about.html"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
           </li>
-          <li><a href="contact.php"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
+          <li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
           </li>
           <?php if($acm->CheckLogin()){ 
             
              
             <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;  $acm->UserFullName();  </a>
               <ul class="dropdown">
-                <li><a href="  $acm->UserRole(); /index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                <li><a href="  $acm->UserRole(); /index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                 </li>
-                <li><a href="  $acm->UserRole(); /settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                <li><a href="  $acm->UserRole(); /settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                 </li>
-                <li><a href="login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
+                <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                 </li>
               </ul>
             </li>
           <?php } else{  
-            <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
+            <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
             </li>
           <?php }  
           
@@ -375,7 +375,7 @@ require_once("./include/acm_membership_config.php");
           </div>
           <div class="col-md-6">
             <ul class="breadcrumbs">
-              <li><a href="index.php">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><b>Authors</b></li>
               <li>Paper Submission</li>
             </ul>
@@ -455,15 +455,15 @@ require_once("./include/acm_membership_config.php");
                 <ul>
 
                   <li>
-                    <a href="call_for.php">Call for Contributions</a>
+                    <a href="call_for.html">Call for Contributions</a>
                   </li>
 
                   <li>
-                    <a href="instructions.php">Presentation Instructions</a>
+                    <a href="instructions.html">Presentation Instructions</a>
                   </li>
 
                   <li>
-                    <a href="dates.php">Important Dates</a>
+                    <a href="dates.html">Important Dates</a>
                   </li>
 
                 </ul>
@@ -475,7 +475,7 @@ require_once("./include/acm_membership_config.php");
       <!-- End content -->
 
  <?php
-require_once("footer.php");
+require_once("footer.html");
  
 
         </div>
@@ -508,7 +508,7 @@ require_once("footer.php");
 
     }
   }
-  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.open("GET","livesearch.html?q="+str,true);
   xmlhttp.send();
 }
 
@@ -536,7 +536,7 @@ function subscribe()
  }
  else
  {
-  xmlhttp.open("GET","subscribe.php?email="+email,true);
+  xmlhttp.open("GET","subscribe.html?email="+email,true);
   xmlhttp.send();
 }
 }

@@ -1,8 +1,8 @@
 <?php
 
-require_once("./include/db_config.php");
+require_once("./include/db_config.html");
 
-require_once("./include/acm_membership_config.php");
+require_once("./include/acm_membership_config.html");
 
 
 
@@ -234,11 +234,11 @@ require_once("./include/acm_membership_config.php");
 
                 </li>
 
-                <li><a href="mailto:<?php echo $acm->SiteEmail(); ?>"><i class="fa fa-envelope-o"></i> <?php echo $acm->SiteEmail(); ?></a>
+                <li><a href="mailto:rsc2021@walchandsangli.ac.in"><i class="fa fa-envelope-o"></i> rsc2021@walchandsangli.ac.in</a>
 
                 </li>
 
-                <li><a href="#"><i class="fa fa-phone"></i> <?php echo $acm->SiteContact(); ?></a>
+                <li><a href="#"><i class="fa fa-phone"></i> +91 88057 09102 | 7030226700</a>
 
                 </li>
 
@@ -324,11 +324,11 @@ require_once("./include/acm_membership_config.php");
 
             <!-- End Toggle Nav Link For Mobiles -->
 
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="index.html">
 
-              <h1><?php echo $acm->SiteName(); ?></h1>
+              <h1><img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021</h1>
 
-              <small><?php echo $acm->AdminEmail(); ?></small>
+              <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFIFTH NATIONAL RESEARCH SYMPOSIUM ON COMPUTING</small>
 
             </a>
 
@@ -367,7 +367,7 @@ require_once("./include/acm_membership_config.php");
 
                 <li>
 
-                  <a href="index.php"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
+                  <a href="index.html"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
 
                 </li>
 
@@ -377,21 +377,21 @@ require_once("./include/acm_membership_config.php");
 
                   <ul class="dropdown">
 
-                    <li><a href="call_for.php" >Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
+                    <li><a href="call_for.html" >Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
 
                     </li>
 
-                    <li><a href="instructions.php" class="active">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
+                    <li><a href="instructions.html" class="active">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
 
                     </li>
 
-                    <li><a href="submission.php">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
+                    <li><a href="submission.html">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
 
                     </li>
 
 
 
-                    <li><a href="dates.php">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+                    <li><a href="dates.html">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
 
                     </li>
 
@@ -403,25 +403,25 @@ require_once("./include/acm_membership_config.php");
 
                   <ul class="dropdown">
 
-                    <li><a href="keynotes.php">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
+                    <li><a href="keynotes.html">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
 
                     </li>
 
-                    <li><a href="paper_presentation.php">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
+                    <li><a href="paper_presentation.html">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
 
                     </li> 
 
-                    <li><a href="poster_presentation.php">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
+                    <li><a href="poster_presentation.html">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
 
                     </li>
 
-                    <li><a href="schedule.php">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+                    <li><a href="schedule.html">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
 
                     </li>
 
 
 
-                    <li><a href="register.php">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
+                    <li><a href="register.html">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
 
                     </li>
 
@@ -433,7 +433,7 @@ require_once("./include/acm_membership_config.php");
 
                   <ul class="dropdown">
 
-                    <li><a href="committee.php?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                    <li><a href="committee.html?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
 
                     </li>
 
@@ -453,13 +453,13 @@ require_once("./include/acm_membership_config.php");
 
                   <ul class="dropdown">
 
-                    <li><a href="venue.php">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
+                    <li><a href="venue.html">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
 
                     </li>
 
 
 
-                    <li><a href="location.php">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
+                    <li><a href="location.html">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
 
                     </li>
 
@@ -467,7 +467,7 @@ require_once("./include/acm_membership_config.php");
 
 
 
-                    <li><a href="accessing.php">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
+                    <li><a href="accessing.html">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
 
                     </li>
 
@@ -477,15 +477,15 @@ require_once("./include/acm_membership_config.php");
 
 
 
-                <li><a href="gallery.php"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
+                <li><a href="gallery.html"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
 
                 </li>
 
-                <li><a href="about.php"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
+                <li><a href="about.html"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
 
                 </li>
 
-                <li><a href="contact.php"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
+                <li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
 
                 </li>
 
@@ -494,16 +494,16 @@ require_once("./include/acm_membership_config.php");
                   ?>
                   <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
                     <ul class="dropdown">
-                      <li><a href="<?php echo $acm->UserRole();?>/index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                      <li><a href="<?php echo $acm->UserRole();?>/index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                       </li>
-                      <li><a href="<?php echo $acm->UserRole();?>/settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                      <li><a href="<?php echo $acm->UserRole();?>/settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                       </li>
-                      <li><a href="login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
+                      <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                       </li>
                     </ul>
                   </li>
                 <?php } else{ ?>
-                              <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
+                              <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
             </li>
                 <?php } ?>
 
@@ -525,7 +525,7 @@ require_once("./include/acm_membership_config.php");
 
           <li>
 
-            <a href="index.php"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
+            <a href="index.html"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
 
           </li>
 
@@ -535,21 +535,21 @@ require_once("./include/acm_membership_config.php");
 
             <ul class="dropdown">
 
-              <li><a href="call_for.php">Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
+              <li><a href="call_for.html">Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
 
               </li>
 
-              <li><a href="instructions.php" class="active">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
+              <li><a href="instructions.html" class="active">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
 
               </li>
 
-              <li><a href="submission.php">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
+              <li><a href="submission.html">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
 
               </li>
 
 
 
-              <li><a href="dates.php">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+              <li><a href="dates.html">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
 
               </li>
 
@@ -561,25 +561,25 @@ require_once("./include/acm_membership_config.php");
 
             <ul class="dropdown">
 
-              <li><a href="keynotes.php">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
+              <li><a href="keynotes.html">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
 
               </li>
 
-              <li><a href="paper_presentation.php">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
+              <li><a href="paper_presentation.html">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
 
               </li> 
 
-              <li><a href="poster_presentation.php">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
+              <li><a href="poster_presentation.html">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
 
               </li>
 
-              <li><a href="schedule.php">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+              <li><a href="schedule.html">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
 
               </li>
 
 
 
-              <li><a href="register.php">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
+              <li><a href="register.html">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
 
               </li>
 
@@ -591,13 +591,13 @@ require_once("./include/acm_membership_config.php");
 
             <ul class="dropdown">
 
-              <li><a href="committee.php?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+              <li><a href="committee.html?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
 
               </li>
 
 
 
-              <li><a href="committee.php?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+              <li><a href="committee.html?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
 
               </li>
 
@@ -611,13 +611,13 @@ require_once("./include/acm_membership_config.php");
 
             <ul class="dropdown">
 
-              <li><a href="venue.php">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
+              <li><a href="venue.html">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
 
               </li>
 
 
 
-              <li><a href="location.php">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
+              <li><a href="location.html">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
 
               </li>
 
@@ -625,7 +625,7 @@ require_once("./include/acm_membership_config.php");
 
 
 
-              <li><a href="accessing.php">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
+              <li><a href="accessing.html">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
 
               </li>
 
@@ -635,15 +635,15 @@ require_once("./include/acm_membership_config.php");
 
 
 
-          <li><a href="gallery.php"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
+          <li><a href="gallery.html"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
 
           </li>
 
-          <li><a href="about.php"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
+          <li><a href="about.html"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
 
           </li>
 
-          <li><a href="contact.php"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
+          <li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
 
           </li>
 
@@ -652,16 +652,16 @@ require_once("./include/acm_membership_config.php");
             ?>
             <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
               <ul class="dropdown">
-                <li><a href="<?php echo $acm->UserRole();?>/index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                <li><a href="<?php echo $acm->UserRole();?>/index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                 </li>
-                <li><a href="<?php echo $acm->UserRole();?>/settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                <li><a href="<?php echo $acm->UserRole();?>/settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                 </li>
-                <li><a href="login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
+                <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                 </li>
               </ul>
             </li>
           <?php } else{ ?>
-<li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
+<li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
                   </li>
           <?php } ?>
 
@@ -707,7 +707,7 @@ require_once("./include/acm_membership_config.php");
 
             <ul class="breadcrumbs">
 
-              <li><a href="index.php">Home</a></li>
+              <li><a href="index.html">Home</a></li>
 
               <li><b>Authors</b></li>
 
@@ -815,7 +815,7 @@ require_once("./include/acm_membership_config.php");
 
 
 
-                <a href="call_for.php">Call for Contributions</a>
+                <a href="call_for.html">Call for Contributions</a>
 
 
 
@@ -835,7 +835,7 @@ require_once("./include/acm_membership_config.php");
 
 
 
-                <a href="submission.php">Paper Submission</a>
+                <a href="submission.html">Paper Submission</a>
 
 
 
@@ -851,7 +851,7 @@ require_once("./include/acm_membership_config.php");
 
 
 
-                <a href="dates.php">Important Dates</a>
+                <a href="dates.html">Important Dates</a>
 
 
 
@@ -894,7 +894,7 @@ require_once("./include/acm_membership_config.php");
 
 
  <?php
-require_once("footer.php");
+require_once("footer.html");
 ?>
 
 
@@ -959,7 +959,7 @@ require_once("footer.php");
 
   }
 
-  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.open("GET","livesearch.html?q="+str,true);
 
   xmlhttp.send();
 
@@ -1015,7 +1015,7 @@ function subscribe()
 
  {
 
-  xmlhttp.open("GET","subscribe.php?email="+email,true);
+  xmlhttp.open("GET","subscribe.html?email="+email,true);
 
   xmlhttp.send();
 

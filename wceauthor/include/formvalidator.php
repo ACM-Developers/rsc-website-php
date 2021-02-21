@@ -1,7 +1,7 @@
 <?PHP
 /*
   -------------------------------------------------------------------------
-      PHP Form Validator (formvalidator.php)
+      PHP Form Validator (formvalidator.html)
               Version 1.1
     This program is free software published under the
     terms of the GNU Lesser General Public License.

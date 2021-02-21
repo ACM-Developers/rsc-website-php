@@ -153,7 +153,7 @@
               <i class="fa fa-bars"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="index.html">
               <h1>  <img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021  </h1>
               <small>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFIFTH NATIONAL RESEARCH SYMPOSIUM ON COMPUTING  </small>
             </a>
@@ -175,7 +175,7 @@
 
               <ul class="nav navbar-nav" >
                 <li>
-                  <a class="active" href="index.php"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
+                  <a class="active" href="index.html"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
                 </li>
                 <li>
                   <a href="#"><span class="pull-left"><i class="fa fa-group"></i></span>&nbsp;&nbsp;Authors</a>
@@ -244,17 +244,17 @@
 
                   <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;  $acm->UserFullName();  </a>
                     <ul class="dropdown">
-                      <li><a href="  $acm->UserRole(); /index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                      <li><a href="  $acm->UserRole(); /index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                       </li>
-                      <li><a href="  $acm->UserRole(); /settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                      <li><a href="  $acm->UserRole(); /settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                       </li>
-                      <li><a href="login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
+                      <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                       </li>
                     </ul>
                   </li>
                 <?php } else{
 
-                  <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
+                  <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
                   </li>
                 <?php }
               </ul>
@@ -332,16 +332,16 @@
 
             <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;  $acm->UserFullName();  </a>
               <ul class="dropdown">
-                <li><a href="  $acm->UserRole(); /index.php">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+                <li><a href="  $acm->UserRole(); /index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
                 </li>
-                <li><a href="  $acm->UserRole(); /settings.php">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+                <li><a href="  $acm->UserRole(); /settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
                 </li>
-                <li><a href="login.php?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
+                <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
                 </li>
               </ul>
             </li>
           <?php } else{
-            <li><a href="register_rsc.php"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
+            <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
             </li>
           <?php }
         </ul>-->
@@ -581,7 +581,7 @@
       document.getElementById("livesearch").style.padding="3%";
     }
   }
-  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.open("GET","livesearch.html?q="+str,true);
   xmlhttp.send();
 }
 function subscribe()
@@ -606,7 +606,7 @@ function subscribe()
  }
  else
  {
-  xmlhttp.open("GET","subscribe.php?email="+email,true);
+  xmlhttp.open("GET","subscribe.html?email="+email,true);
   xmlhttp.send();
 }
 }

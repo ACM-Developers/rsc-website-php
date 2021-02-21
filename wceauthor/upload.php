@@ -1,23 +1,23 @@
 <?php
 //turn on php error reporting
 
-require_once("../include/db_config.php");
-require_once("../include/acm_membership_config.php");
+require_once("../include/db_config.html");
+require_once("../include/acm_membership_config.html");
 if(!$acm->CheckLogin())
 {
-    header("Location: ../login.php?loginerror=true");
+    header("Location: ../login.html?loginerror=true");
 }
 
 if(!$acm->isUserInRole("wceauthor"))
 {
 	$role = $acm->UserRole();
-	header("Location: ../".$role."/index.php");
+	header("Location: ../".$role."/index.html");
 }
 $acm->UpdateSessionVars();
 $status = $acm->UserStatus();
 if($status <2)
 {
-    header("Location: index.php?profileerror=true");  
+    header("Location: index.html?profileerror=true");  
 }
 
 
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 				move_uploaded_file($tmpName,$targetPath); 
 				$sql = "insert into registration(user_id,txn_id,payment_status,file_label, file_link) values('$userid','$txn_id','1','$file_label','$targetPath')";
 				if(mysqli_query($conn, $sql)){
-				header( 'Location: register.php' ) ;		
+				header( 'Location: register.html' ) ;		
 				} 
 				else{
 					echo "error";

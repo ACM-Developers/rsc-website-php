@@ -4,7 +4,7 @@
  *
  * Copyright 2013, Dev7studios
  * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
+ * http://www.opensource.org/licenses/mit-license.html
  */
 
 ;(function($, window, document, undefined){
