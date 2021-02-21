@@ -328,7 +328,7 @@ require_once("./include/acm_membership_config.php");
 
               <h1><?php echo <img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021 ?></h1>
 
-              <small><?php echo $acm->AdminEmail(); ?></small>
+              <small><?php echo rsc2021@walchandsangli.ac.in ?></small>
 
             </a>
 
