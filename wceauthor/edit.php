@@ -236,10 +236,10 @@ $status = $acm->UserStatus();
              </li>
               <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
                 <ul class="dropdown">
-                  <li><a href="../committee.html?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                  <li><a href="../org_committee.html"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                   </li>
              
-                  <li><a href="../committee.html?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                  <li><a href="../adv_committee.html"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                   </li>
              
                 </ul>
@@ -320,10 +320,10 @@ $status = $acm->UserStatus();
              </li>
               <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
                 <ul class="dropdown">
-                  <li><a href="../committee.html?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                  <li><a href="../org_committee.html"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                   </li>
              
-                  <li><a href="../committee.html?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                  <li><a href="../adv_committee.html"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                   </li>
              
                 </ul>
