@@ -384,7 +384,7 @@ require_once("./include/acm_membership_config.php");
          <div class="col-md-9">
 
           <h1 class="accent-color"> WCE Research Symposium on Computing - RSC 2021 </h1>
-          <p><strong>FIFTH NATIONAL RESEARCH SYMPOSIUM ON COMPUTING <br/>National Level joint Event by WCE ACM Student Chapter and  Department of CSE and Department of IT (WCE,Sangli) and Jabalpur College of Engineering, Jabalpur <br>At Walchand College of Engineering, Sangli. <br>As a Co-located activity of International Conference on Computing in Science and Technology (ICCET 2020).</strong></p>
+          <p><strong>FIFTH NATIONAL RESEARCH SYMPOSIUM ON COMPUTING <br/>National Level joint Event by WCE ACM Student Chapter and  Department of CSE and Department of IT (WCE,Sangli) and Jabalpur College of Engineering, Jabalpur <br>At Walchand College of Engineering, Sangli. </strong></p>
           <br/><br/>
 
           <h1 class="accent-color">Registration Instructions for Attendees</h1>
