@@ -1,8 +1,3 @@
-<?php
-require_once("./include/db_config.html");
-require_once("./include/acm_membership_config.html");
-
-?>
 
 <!doctype html>
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -11,8 +6,14 @@ require_once("./include/acm_membership_config.html");
 
 <head>
 
+  <link rel="stylesheet" href="css/flipclock.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <script src="js/flipclock.js"></script>
+
   <!-- Basic -->
-  <title>WCE Research Symposium on Computing | Terms of Use</title>
+  <title>WCE Research Symposium on Computing | Paper Submission</title>
 
   <!-- Define Charset -->
   <meta charset="utf-8">
@@ -151,7 +152,7 @@ require_once("./include/acm_membership_config.html");
       <!-- .top-bar -->
       <!-- End Top Bar -->
 
-
+      
       <!-- Start  Logo & Naviagtion  -->
       <div class="navbar navbar-default navbar-top">
         <div class="container">
@@ -162,8 +163,8 @@ require_once("./include/acm_membership_config.html");
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
             <a class="navbar-brand" href="index.html">
-              <h1><img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021</h1>
-              <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFIFTH NATIONAL RESEARCH SYMPOSIUM ON COMPUTING</small>
+              <h1>WCE Research Symposium on Computing - RSC 2021</h1>
+              <small>Organized by WCE ACM Student Chapter <br/>National  Level Event By Department of Computer Science & Engineering</small>
             </a>
           </div>
           <div class="navbar-collapse collapse">
@@ -192,24 +193,24 @@ require_once("./include/acm_membership_config.html");
                     </li>
                     <li><a href="instructions.html">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
                     </li>
-                    <li><a href="submission.html" >Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
+                    <li><a href="submission.html">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
                     </li>
                     
                     <li><a href="dates.html">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
                     </li>
                   </ul>
                 </li>
-                <li><a href="#"><span class="pull-left"><i class="fa fa-calendar-check-o"></i></span>&nbsp;&nbsp;Programs</a>
+                <li><a href="#" class="active"><span class="pull-left"><i class="fa fa-calendar-check-o"></i></span>&nbsp;&nbsp;Programs</a>
                   <ul class="dropdown">
                     <li><a href="keynotes.html">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
                     </li>
-                    <li><a href="paper_presentation.html">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
+                    <li><a href="paper_presentation.html" >Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
                     </li> 
                     <li><a href="poster_presentation.html">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
                     </li>
-                    <li><a href="schedule.html">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+                    <li><a href="schedule.html"  class="active">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
                     </li>
-                    
+
                     <li><a href="register.html">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
                     </li>
                   </ul>
@@ -244,198 +245,305 @@ require_once("./include/acm_membership_config.html");
                 </li>
                 <li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
                 </li>
-                <?php if($acm->CheckLogin()){ 
-                  
-                  ?>
-                  <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
-                    <ul class="dropdown">
-                      <li><a href="<?php echo $acm->UserRole();?>/index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
-                      </li>
-                      <li><a href="<?php echo $acm->UserRole();?>/settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
-                      </li>
-                      <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
-                      </li>
-                    </ul>
-                  </li>
-                <?php } else{ ?>
-                 <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
-                 </li>
-               <?php } ?>
-             </ul>
-           </div>
-           <!-- End Navigation List -->
-         </div>
-       </div>
+                <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Navigation List -->
+          </div>
+        </div>
 
-       <!-- Mobile Menu Start -->
-       <ul class="wpb-mobile-menu">
-        <li>
-          <a href="index.html"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
-        </li>
-        <li>
-          <a href="#" ><span class="pull-left"><i class="fa fa-group"></i></span>&nbsp;&nbsp;Authors</a>
-          <ul class="dropdown">
-            <li><a href="call_for.html">Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
-            </li>
-            <li><a href="instructions.html">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
-            </li>
-            <li><a href="submission.html" >Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
-            </li>
-            
-            <li><a href="dates.html">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#"><span class="pull-left"><i class="fa fa-calendar-check-o"></i></span>&nbsp;&nbsp;Programs</a>
-          <ul class="dropdown">
-            <li><a href="keynotes.html">Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
-            </li>
-            <li><a href="paper_presentation.html">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
-            </li> 
-            <li><a href="poster_presentation.html">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
-            </li>
-            <li><a href="schedule.html">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
-            </li>
-
-            <li><a href="register.html">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
-          <ul class="dropdown">
-            <li><a href="org_committee.html"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
-            </li>
-            
-            <li><a href="adv_committee.html"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
-            </li>
-            
-          </ul>
-        </li>
-        <li><a href="#"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;Local Information</a>
-          <ul class="dropdown">
-            <li><a href="venue.html">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
-            </li>
-            
-            <li><a href="location.html">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
-            </li>
-            
-
-            <li><a href="accessing.html">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
-            </li>
-          </ul>
-        </li>
-
-        <li><a href="gallery.html"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
-        </li>
-        <li><a href="about.html"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
-        </li>
-        <li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
-        </li>
-        <?php if($acm->CheckLogin()){ 
-          
-          ?>
-          <li><a href="#"><span class="pull-left"><i class="fa fa-user"></i></span>&nbsp;&nbsp;<?php echo $acm->UserFullName(); ?></a>
+        <!-- Mobile Menu Start -->
+        <ul class="wpb-mobile-menu">
+          <li>
+            <a href="index.html"><span class="pull-left"><i class="fa fa-home"></i></span>&nbsp;&nbsp;Home</a>
+          </li>
+          <li>
+            <a href="#"><span class="pull-left"><i class="fa fa-group"></i></span>&nbsp;&nbsp;Authors</a>
             <ul class="dropdown">
-              <li><a href="<?php echo $acm->UserRole();?>/index.html">Dashboard <span class="pull-right"><i class="fa fa-dashboard"></i></span></a>
+              <li><a href="call_for.html">Call for Contributions <span class="pull-right"><i class="fa fa-bullhorn"></i></span></a>
               </li>
-              <li><a href="<?php echo $acm->UserRole();?>/settings.html">Settings <span class="pull-right"><i class="fa fa-gears"></i></span></a>
+              <li><a href="instructions.html">Presentation <br/> Instructions <span class="pull-right"><i class="fa fa-info-circle"></i></span></a>
               </li>
-              <li><a href="login.html?logout=true">Logout <span class="pull-right"><i class="fa fa-sign-out"></i></span></a>
+              <li><a href="submission.html">Paper Submission <span class="pull-right"><i class="fa fa-upload"></i></span></a>
+              </li>
+              
+              <li><a href="dates.html">Important Dates<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
               </li>
             </ul>
           </li>
-        <?php } else{ ?>
+          <li><a href="#" class="active"><span class="pull-left"><i class="fa fa-calendar-check-o"></i></span>&nbsp;&nbsp;Programs</a>
+            <ul class="dropdown">
+              <li><a href="keynotes.html" >Keynotes &amp; Awards Presentation<span class="pull-right"><i class="fa fa-microphone"></i></span></a>
+              </li>
+              <li><a href="paper_presentation.html">Paper Presentation<span class="pull-right"><i class="fa fa-newspaper-o"></i></span></a>
+              </li> 
+              <li><a href="poster_presentation.html">Poster Presentation<span class="pull-right"><i class="fa fa-image"></i></span></a>
+              </li>
+              <li><a href="schedule.html"  class="active">Event Schedule<span class="pull-right"><i class="fa fa-calendar"></i></span></a>
+              </li>
+
+              <li><a href="register.html">Event Registration<span class="pull-right"><i class="fa fa-edit"></i></span></a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
+            <ul class="dropdown">
+              <li><a href="org_committee.html"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+              </li>
+              
+              <li><a href="adv_committee.html"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a href="#"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;Local Information</a>
+            <ul class="dropdown">
+              <li><a href="venue.html">Conference Venue<span class="pull-right"><i class="fa fa-location-arrow"></i></span></a>
+              </li>
+              
+              <li><a href="location.html">Conference Location<span class="pull-right"><i class="fa fa-map-marker"></i></span></a>
+              </li>
+              
+
+              <li><a href="accessing.html">Accessing Sangli<span class="pull-right"><i class="fa fa-plane"></i></span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="gallery.html"><span class="pull-left"><i class="fa fa-image"></i></span>&nbsp;&nbsp;Gallery</a>
+          </li>
+          <li><a href="about.html"><span class="pull-left"><i class="fa fa-info-circle"></i></span>&nbsp;&nbsp;About</a>
+          </li>
+          <li><a href="contact.html"><span class="pull-left"><i class="fa fa-envelope"></i></span>&nbsp;&nbsp;Contact</a>
+          </li>
           <li><a href="register_rsc.html"><span class="pull-left"><i class="fa fa-sign-in"></i></span>&nbsp;&nbsp;Register</a>
           </li>
-        <?php } ?>
-        
-      </ul>
-      <!-- Mobile Menu End -->
+          
+        </ul>
+        <!-- Mobile Menu End -->
 
-    </div>
-    <!-- End Header Logo & Naviagtion -->
-
-  </header>
-  <!-- End Header Section -->
-
-
-  <!-- Start Page Banner -->
-  <div class="page-banner" style="padding:40px 0; background: url(images/slide-02-bg.jpg) center #f9f9f9;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Terms of Use</h2>
-        </div>
-        <div class="col-md-6">
-          <ul class="breadcrumbs">
-            <li><a href="index.html">Home</a></li>
-            <li>Terms of Use</li>
-          </ul>
-        </div>
       </div>
-    </div>
-  </div>
-  <!-- End Page Banner -->
-  <!-- Start Content -->
-  <div id="content">
-    <div class="container">
-      <div class="page-content">
-        
-        <div class="row" style="text-align:justify;">
-         <div class="col-md-9 col-sm-12">
-          <div class="service-content">
-            <h4>Terms and Conditions of WCE Research Symposium on Computing </h4>
-            <p>Below are the Terms and Conditions for use of WCE Research Symposium on Computing. Please read these carefully. If you need to contact us regarding any aspect of the following terms of use of our website, please contact us on the following email address - rsc2021@walchandsangli.ac.in </p>
-            <br/>
-            
-            <p>By accessing the content of WCE Research Symposium on Computing ( hereafter referred to as website ) you agree to the terms and conditions set out herein and also accept our Privacy Policy. If you do not agree to any of the terms and conditions you should not continue to use the Website and leave immediately. 
-            </p>
+      <!-- End Header Logo & Naviagtion -->
 
-            <br/>
-            <p>You agree that you shall not use the website for any illegal purposes, and that you will respect all applicable laws and regulations. 
-            </p>
-
-            <br/>
-            <p>You agree not to use the website in a way that may impair the performance, corrupt or manipulate the content or information available on the website or reduce the overall functionality of the website. 
-            </p><p>You agree not to compromise the security of the website or attempt to gain access to secured areas of the website or attempt to access any sensitive information you may believe exist on the website or server where it is hosted. 
+    </header>
+    <!-- End Header Section -->
 
 
-            </p><p>You agree to be fully responsible for any claim, expense, losses, liability, costs including legal fees incurred by us arising from any infringement of the terms and conditions in this agreement and to which you will have agreed if you continue to use the website. 
-
-            </p><p>The reproduction, distribution in any method whether online or offline is strictly prohibited. The work on the website and the images, logos, text and other such information is the property of WCE Research Symposium on Computing ( unless otherwise stated ). 
-
-              <br/>
-              <h4>Disclaimer</h4>
-              <br/>
-            </p><p>Though we strive to be completely accurate in the information that is presented on our site, and attempt to keep it as up to date as possible, in some cases, some of the information you find on the website may be slightly outdated. 
-
-            </p><p>
-              WCE Research Symposium on Computing reserves the right to make any modifications or corrections to the information you find on the website at any time without notice. 
-
-            </p>
-
-            <br/>
-            <h4>
-              Change to the Terms and Conditions of Use 
-
-              <br/>
-              <p>
-                We reserve the right to make changes and to revise the above mentioned Terms and Conditions of use. 
-
-              </p>
-              <br/><p>Last Revised: 12-10-2016</p>            
-
-            </div>
+    <!-- Start Page Banner -->
+    <div class="page-banner" style="padding:40px 0; background: url(images/slide-02-bg.jpg) center #f9f9f9;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Event Schedule</h2>
+            <p>Feel Free To Get In Touch</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">Home</a></li>
+              <li><b>Programs</b></li>
+              <li>Event Schedule</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End content -->
+    <!-- End Page Banner -->
+    <!-- Start Content -->
+    <br>
+    <div id="content">
+      <div class="container">
+        <div class="page-content">
 
-<?php
-require_once("footer.html");
-?>
+         <div class="col-md-9">
+           <div class="row">
+            <div class="col-sm-12">
+              <div class="alert alert-success alert-dismissible">
+                <!--<h3><a href="rsc-schedule19.pdf" target="_blank">Click Here </a> to view the event schedule of WCE RSC 2019</h3>
+                -->
+                <h3>Yet to be declared. Stay tuned for further updates.</h3>
+                
+              </div>
+            </div>
+          </div>
+            <!--div class="row">
+            <div class="col-sm-12">
+              <div class="alert alert-success alert-dismissible">
+                <h3><a href="criteria.pdf" target="_blank">Click Here </a> to view the evaluation criteria of WCE RSC 2018</h3>
+              </div>
+                </div>
+              </div-->
+            </div>
+            <div class="col-md-3 sidebar right-sidebar">
+              <!-- Categories Widget -->
+              <div class="widget widget-categories">
+                <h4>Related Links <span class="head-line"></span></h4>
+                <ul>
+
+                  <li>
+                    <a href="keynotes.html">Keynotes &amp; Award Presentation</a>
+                  </li>
+
+                  <li>
+                    <a href="paper_presentation.html">Paper Presentation</a>
+                  </li>
+
+                  <li>
+                    <a href="poster_presentation.html">Poster Presentation</a>
+                  </li>
+                  
+                  <li>
+                    <a href="register.html">Registration</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End content -->
+      <footer>
+        <div class="container">
+          <div class="row footer-widgets">
+    
+            <!-- Start Subscribe & Social Links Widget -->
+            <div class="col-md-3">
+              <div class="footer-widget mail-subscribe-widget">
+                <h4>Get in touch<span class="head-line"></span></h4>
+                <p>Subscribe to our forum to stay tuned for the latest updates related to <b>WCE Research Symposium on Computing!</b></p>
+                <form class="subscribe">
+                  <input type="email" class="email" id="txtEmail" placeholder="mail@example.com">
+                  <a href="#subscribe" class="btn btn-lg btn-system" onclick="subscribe()">Subscribe</a>
+                </form>
+                <div id="subscribeResponse"></div>
+              </div>
+              <div class="footer-widget social-widget">
+                <h4>Follow Us<span class="head-line"></span></h4>
+                <ul class="social-icons">
+                  <li>
+                    <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a class="google" href="#"><i class="fa fa-google-plus"></i></a>
+                  </li>
+                  <li>
+                    <a class="linkdin" href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a class="instgram" href="#"><i class="fa fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- .col-md-3 -->
+            <!-- End Subscribe & Social Links Widget -->
+    
+    
+            <!-- Start Twitter Widget -->
+            <div class="col-md-3">
+              <div class="footer-widget twitter-widget">
+                <h4>Quick Links<span class="head-line"></span></h4>
+                <ul>
+                  <li>
+                    <a href="asset/RSC-2018.pdf" target="_blank">e-Proceeding Download </a>
+                  </li>
+                  <li>
+                    <a href="about.html">About Us </a>
+                  </li>
+    
+                  <li>
+                    <a href="contact.html">Contact Us </a>
+                  </li>
+                  <li>
+                    <a href="terms.html">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- .col-md-3 -->
+            <!-- End Twitter Widget -->
+    
+    
+            <!-- Start Flickr Widget -->
+            <div class="col-md-3">
+              <div class="footer-widget flickr-widget">
+                <h4>External Links<span class="head-line"></span></h4>
+                <ul class="flickr-list">
+                 
+                      <li>
+                        <a href="http://acm.org" class="lightbox">
+                          <img alt="ACM Official Website" src="images/ext/1.png">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://india.acm.org" class="lightbox">
+                          <img alt="ACM India Official Website" src="images/ext/2.png">
+                        </a>
+                      </li>
+                      <li>
+                        <a href="http://walchandsangli.ac.in" class="lightbox">
+                          <img alt="Walchand College of Engineering Official Website" src="images/ext/3.png">
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href="http://wce.acm.org" class="lightbox">
+                          <img alt="Wce ACM Official Website" src="images/news/3.jpg">
+                        </a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              </div>
+              <!-- .col-md-3 -->
+              <!-- End Flickr Widget -->
+    
+    
+              <!-- Start Contact Widget -->
+              <div class="col-md-3">
+                <div class="footer-widget contact-widget">
+                  <h4><img src="images/acm.png" class="img-responsive" alt="WCE Research Symposium on Computing" /></h4>
+                  <p>WCE Research Symposium on Computing 2021 is the 5th National Level event organized by Department of Computer Science &amp; Engineering, Walchand College of Engineering, Sangli.</p>
+                  <ul>
+                    <li><span>Phone Number:</span> +91 88057 09102 | 7030226700</li>
+                    <li><span>Email:</span> rsc2021@walchandsangli.ac.in</li>
+                    <li><span>Website:</span> http://rsc.wce.ac.in</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- .col-md-3 -->
+              <!-- End Contact Widget -->
+    
+    
+            </div>
+            <!-- row -->
+    
+            <!-- Start Copyright -->
+            <div class="copyright-section">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>&copy; 2021 WCE Research Symposium on Computing - All Rights Reserved <br/></p>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="footer-nav">
+                      <li><a href="sitemap.html">Sitemap</a></li>
+                      <li><a href="privacy.html">Privacy Policy</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- End Copyright -->
+    
+            </div>
+          </footer>
+          <!-- End Footer -->
+    
+    
 
     </div>
     <!-- End Container -->
