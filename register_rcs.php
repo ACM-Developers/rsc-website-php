@@ -190,7 +190,7 @@ if($acm->CheckLogin())
             <!-- End Toggle Nav Link For Mobiles -->
             <a class="navbar-brand" href="index.php">
               <h1><img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021</h1>
-              <small><?php echo $acm->AdminEmail(); ?></small>
+              <small>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFIFTH NATIONAL RESEARCH SYMPOSIUM ON COMPUTING</small>
             </a>
           </div>
           <div class="navbar-collapse collapse">
