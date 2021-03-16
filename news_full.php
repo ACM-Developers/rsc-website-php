@@ -231,10 +231,10 @@ if(mysqli_num_rows($result)>0){
                 </li>
                 <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
                   <ul class="dropdown">
-                    <li><a href="committee.php?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                    <li><a href="org_committee"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                     </li>
                     
-                    <li><a href="committee.php?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+                    <li><a href="adv_committee"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
                     </li>
                     
                   </ul>
@@ -318,10 +318,10 @@ if(mysqli_num_rows($result)>0){
         </li>
         <li><a href="#"><span class="pull-left"><i class="fa fa-sitemap"></i></span>&nbsp;&nbsp;Organisation</a>
           <ul class="dropdown">
-            <li><a href="committee.php?ref_id=1"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+            <li><a href="org_committee"> Organising Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
             </li>
             
-            <li><a href="committee.php?ref_id=2"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
+            <li><a href="adv_committee"> Technical Program Committee<span class="pull-right"><i class="fa fa-group"></i></span></a>
             </li>
             
           </ul>
