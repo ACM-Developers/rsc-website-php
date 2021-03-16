@@ -143,7 +143,7 @@ if($acm->CheckLogin())
                 </li>
                 <li><a href="mailto:rsc2021@walchandsangli.ac.in"><i class="fa fa-envelope-o"></i> rsc2021@walchandsangli.ac.in</a>
                 </li>
-                <li><a href="#"><i class="fa fa-phone"></i> <?php echo $acm->SiteContact(); ?></a>
+                <li><a href="#"><i class="fa fa-phone"></i> +91 88057 09102 | 7030226700</a>
                 </li>
               </ul>
               <!-- End Contact Info -->
