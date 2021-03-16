@@ -116,7 +116,7 @@ require_once("./include/acm_membership_config.php");
               <ul class="contact-details">
                 <li><a href="#"><i class="fa fa-map-marker"></i> Walchand College of Engineering, Sangli, MH-IN</a>
                 </li>
-                <li><a href="mailto:<?php echo $acm->SiteEmail(); ?>"><i class="fa fa-envelope-o"></i> <?php echo $acm->SiteEmail(); ?></a>
+                <li><a href="mailto:rsc2021@walchandsangli.ac.in"><i class="fa fa-envelope-o"></i> rsc2021@walchandsangli.ac.in</a>
                 </li>
                 <li><a href="#"><i class="fa fa-phone"></i> <?php echo $acm->SiteContact(); ?></a>
                 </li>
