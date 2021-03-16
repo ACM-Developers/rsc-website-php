@@ -177,7 +177,7 @@ if(mysqli_num_rows($result)>0){
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
             <a class="navbar-brand" href="index.php">
-              <h1><?php echo $acm->SiteName(); ?></h1>
+              <h1><img src="images/iferp.png" alt="IFERP" style="width:100px; padding-right:2%;"> WCE Research Symposium on Computing - RSC 2021</h1>
               <small><?php echo $acm->AdminEmail(); ?></small>
             </a>
           </div>
